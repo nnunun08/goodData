@@ -1,5 +1,7 @@
-
-/*reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -44,17 +46,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-a{text-decoration:none;}
-
-input{outline:none; border:0; -webkit-appearance: none; -webkit-border-radius: 0; -moz-appearance:none;}
-input::-ms-expand {display:none;}
-button{border:none; background:transparent; font-size:0; outline:none; cursor:pointer;
-		-webkit-appearance: none; -webkit-border-radius: 0;}
-		
-select{outline:none; border:0;-webkit-border-radius: 0;
-		/* 기본 스타일 없애기 */
-		appearance:none;-webkit-appearance:none;-moz-appearance:none;
-		-o-appearance:none;}
-select::-ms-expand {display:none;}/* ie에서 기본 스타일 없애줌 */		
-		
