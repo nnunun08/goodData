@@ -285,7 +285,8 @@ footer a {
 .mainCon .accordion-button .thumbImg {
   width: 59px;
   height: 87px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .mainCon .accordion-button .infoWrap {
   font-weight: 400;
@@ -330,7 +331,8 @@ footer a {
 
 .offcanvas {
   background: rgba(33, 41, 54, 0.95);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   color: #fff;
 }
 
@@ -348,4 +350,28 @@ footer a {
 }
 .btn:hover {
   background-color: var(--primaryHover) !important;
+}
+
+.detailInfo {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 162%;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.detailInfo .tit {
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 4px;
+}
+.detailInfo .value {
+  padding-bottom: 10px;
+}
+
+.chartTit {
+  margin-bottom: 23px;
+  margin-top: 50px;
+}
+
+.chartWrap {
+  height: 210px;
 }/*# sourceMappingURL=renewStyle.css.map */
