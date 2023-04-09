@@ -97,15 +97,15 @@
                 <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
                     
                     <!-- 타입필터 : 종합 / 드라마 / 비드라마 -->
-                    <ul class="nav nav-tabs typeFilter" id="typeFilter" role="tablist">
+                    <ul class="nav nav-tabs typeFilter" id="tab1TypeFilter" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="typeFilter1" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">종합</button>
+                            <button class="nav-link active" id="tab1TypeFilter1" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">종합</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="typeFilter2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">드라마</button>
+                            <button class="nav-link" id="tab1TypeFilter2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">드라마</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="typeFilter3" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">비드라마</button>
+                            <button class="nav-link" id="tab1TypeFilter3" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">비드라마</button>
                         </li>
                         <div class="label">
                             화제성 점유율
@@ -120,7 +120,7 @@
                               <img class="thumbImg" src="https://search.pstatic.net/common?type=o&size=174x242&quality=75&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20230213_271%2F1676251158477fX23z_JPEG%2F02634a527ef6403bbc5201ab9fe46832.jpg" alt="더 글로리">
                               <div class="infoWrap">
                                   <div class="tit">더 글로리 파트2</div>
-                                  <div class="tit-en">The Glory Part 2</div>
+                                  <div class="subTit">The Glory Part 2</div>
                                   <div class="introduce">OTT Drama</div>
                                   <div class="d-flex align-items-center">
                                     <div class="date">2023.3.10</div>
@@ -132,6 +132,7 @@
                               <div class="hasLink">자세히 보기</div>
                             </button>
                           </h2>
+
                           <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="row detailInfo">
@@ -187,10 +188,172 @@
                                 <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">FUNdex 분석결과 보기</a>
 
                                 <div class="chartTit">최근 8주 화제성 점수 추이</div>
+
+                                <!-- FUNdex Charrt -->
                                 <div class="chartWrap">
-                                    <canvas id="myChart"></canvas>
+                                    <canvas id="myChart1"></canvas>
                                 </div>
 
+                                <!-- Table -->
+                                <div class="tableWrap">
+                                    <div class="tableItem">
+                                        <table class="headerTable">
+                                            <tbody>
+                                                <tr><th>방송주차(w)</th></tr>
+                                                <tr><th>화제성</th></tr>
+                                                <tr><th class="under">NEWS</th></tr>
+                                                <tr><th class="under">NEWS</th></tr>
+                                                <tr><th class="under">NEWS</th></tr>
+                                                <tr><th>송혜교</th></tr>
+                                                <tr><th>임지연</th></tr>
+                                                <tr><th>차주영</th></tr>
+                                                <tr><th>검색순위</th></tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="scrollDiv">
+                                            <table class="bodyTable" style="min-width: 540px;">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>w1</th>
+                                                        <th>w2</th>
+                                                        <th>w3</th>
+                                                        <th>w4</th>
+                                                        <th>w5</th>
+                                                        <th>w6</th>
+                                                        <th>w7</th>
+                                                        <th>w8</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tableItem">
+                                        <table class="headerTable">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2" style="height: 70px;">검색반응(%)</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="average">평균</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+    
+                                        <div class="scrollDiv">
+                                            <table class="bodyTable" style="min-width: 340px;">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>10대</th>
+                                                        <th>20대</th>
+                                                        <th>30대</th>
+                                                        <th>40대</th>
+                                                        <th>50대</th>
+                                                        <th>남자</th>
+                                                        <th>여자</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5.5</td>
+                                                        <td>12.2</td>
+                                                        <td>32.2</td>
+                                                        <td>15.6</td>
+                                                        <td>22.5</td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                           </div>
                         </div>
@@ -201,7 +364,7 @@
                                 <img class="thumbImg" src="https://search.pstatic.net/common?type=o&size=174x242&quality=75&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20211222_272%2F1640172866420MTXVN_PNG%2Fbda18900d5a1cf82b4a6167678c88958.png" alt="오징어 게임">
                                 <div class="infoWrap">
                                     <div class="tit">오징어 게임</div>
-                                    <div class="tit-en">The Glory Part 2</div>
+                                    <div class="subTit">The Glory Part 2</div>
                                     <div class="introduce">OTT Drama</div>
                                     <div class="d-flex align-items-center">
                                       <div class="date">2023.3.10</div>
@@ -215,7 +378,225 @@
                           </h2>
                           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div class="row detailInfo">
+                                    <div class="col-6">
+                                        <div class="tit">Channel</div>
+                                        <div class="value">Netflix</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">Production</div>
+                                        <div class="value">화담앤픽쳐스, 화담앤픽쳐스2, 위너 브라더스</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">OPEN</div>
+                                        <div class="value">2022.12.30</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">Episode</div>
+                                        <div class="value">8</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">감독</div>
+                                        <div class="value">김감독</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">작가</div>
+                                        <div class="value">김작가</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">배우</div>
+                                        <div class="value">송혜교, 임지연, 이제훈, 최민식, 배우1, 배우2</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">Genre</div>
+                                        <div class="value">복수, 스릴러, 학교/교육</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">Who</div>
+                                        <div class="value">교사,의사,기상캐스터,기업대표,승무원</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">Where</div>
+                                        <div class="value">고등학교, 초등학교, 기원, 대학교, 교회, 병원</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">When</div>
+                                        <div class="value">현대극</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">Buzz & Feel</div>
+                                        <div class="value">#복수#배우#공개#작가#연기#폭력#생각#가해자# 여자#학교#재밌다#피해자#처절#학교폭력#영혼#소용돌이#남편#친구#바둑#상처#궁금하다#악역</div>
+                                    </div>
+                                </div>
+                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">FUNdex 분석결과 보기</a>
+
+                                <div class="chartTit">최근 8주 화제성 점수 추이</div>
+
+                                <!-- FUNdex Charrt -->
+                                <div class="chartWrap">
+                                    <canvas id="myChart3"></canvas>
+                                </div>
+
+                                <!-- Table -->
+                                <div class="tableWrap">
+                                    <div class="tableItem">
+                                        <table class="headerTable">
+                                            <tbody>
+                                                <tr><th>방송주차(w)</th></tr>
+                                                <tr><th>화제성</th></tr>
+                                                <tr><th class="under">NEWS</th></tr>
+                                                <tr><th class="under">NEWS</th></tr>
+                                                <tr><th class="under">NEWS</th></tr>
+                                                <tr><th>송혜교</th></tr>
+                                                <tr><th>임지연</th></tr>
+                                                <tr><th>차주영</th></tr>
+                                                <tr><th>검색순위</th></tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="scrollDiv">
+                                            <table class="bodyTable" style="min-width: 540px;">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>w1</th>
+                                                        <th>w2</th>
+                                                        <th>w3</th>
+                                                        <th>w4</th>
+                                                        <th>w5</th>
+                                                        <th>w6</th>
+                                                        <th>w7</th>
+                                                        <th>w8</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tableItem">
+                                        <table class="headerTable">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2" style="height: 70px;">검색반응(%)</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="average">평균</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+    
+                                        <div class="scrollDiv">
+                                            <table class="bodyTable" style="min-width: 340px;">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>10대</th>
+                                                        <th>20대</th>
+                                                        <th>30대</th>
+                                                        <th>40대</th>
+                                                        <th>50대</th>
+                                                        <th>남자</th>
+                                                        <th>여자</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5.5</td>
+                                                        <td>12.2</td>
+                                                        <td>32.2</td>
+                                                        <td>15.6</td>
+                                                        <td>22.5</td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                           </div>
                         </div>
@@ -226,7 +607,7 @@
                                 <img class="thumbImg" src="https://search.pstatic.net/common?type=o&size=174x242&quality=100&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20230203_253%2F1675383568545ufRoc_JPEG%2Fc7d94e49b815bafdaabfe1f80d7ec58d.jpg" alt="모범택시2">
                                 <div class="infoWrap">
                                     <div class="tit">모범택시2</div>
-                                    <div class="tit-en">The Glory Part 2</div>
+                                    <div class="subTit">The Glory Part 2</div>
                                     <div class="introduce">OTT Drama</div>
                                     <div class="d-flex align-items-center">
                                       <div class="date">2023.3.10</div>
@@ -240,73 +621,818 @@
                           </h2>
                           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong>
+                                <div class="row detailInfo">
+                                    <div class="col-6">
+                                        <div class="tit">Channel</div>
+                                        <div class="value">Netflix</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">Production</div>
+                                        <div class="value">화담앤픽쳐스, 화담앤픽쳐스2, 위너 브라더스</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">OPEN</div>
+                                        <div class="value">2022.12.30</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">Episode</div>
+                                        <div class="value">8</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">감독</div>
+                                        <div class="value">김감독</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">작가</div>
+                                        <div class="value">김작가</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">배우</div>
+                                        <div class="value">송혜교, 임지연, 이제훈, 최민식, 배우1, 배우2</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">Genre</div>
+                                        <div class="value">복수, 스릴러, 학교/교육</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">Who</div>
+                                        <div class="value">교사,의사,기상캐스터,기업대표,승무원</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">Where</div>
+                                        <div class="value">고등학교, 초등학교, 기원, 대학교, 교회, 병원</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">When</div>
+                                        <div class="value">현대극</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">Buzz & Feel</div>
+                                        <div class="value">#복수#배우#공개#작가#연기#폭력#생각#가해자# 여자#학교#재밌다#피해자#처절#학교폭력#영혼#소용돌이#남편#친구#바둑#상처#궁금하다#악역</div>
+                                    </div>
+                                </div>
+                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">FUNdex 분석결과 보기</a>
+
+                                <div class="chartTit">최근 8주 화제성 점수 추이</div>
+
+                                <!-- FUNdex Charrt -->
+                                <div class="chartWrap">
+                                    <canvas id="myChart2"></canvas>
+                                </div>
+
+                                <!-- Table -->
+                                <div class="tableWrap">
+                                    <div class="tableItem">
+                                        <table class="headerTable">
+                                            <tbody>
+                                                <tr><th>방송주차(w)</th></tr>
+                                                <tr><th>화제성</th></tr>
+                                                <tr><th class="under">NEWS</th></tr>
+                                                <tr><th class="under">NEWS</th></tr>
+                                                <tr><th class="under">NEWS</th></tr>
+                                                <tr><th>송혜교</th></tr>
+                                                <tr><th>임지연</th></tr>
+                                                <tr><th>차주영</th></tr>
+                                                <tr><th>검색순위</th></tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="scrollDiv">
+                                            <table class="bodyTable" style="min-width: 540px;">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>w1</th>
+                                                        <th>w2</th>
+                                                        <th>w3</th>
+                                                        <th>w4</th>
+                                                        <th>w5</th>
+                                                        <th>w6</th>
+                                                        <th>w7</th>
+                                                        <th>w8</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tableItem">
+                                        <table class="headerTable">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2" style="height: 70px;">검색반응(%)</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="average">평균</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+    
+                                        <div class="scrollDiv">
+                                            <table class="bodyTable" style="min-width: 340px;">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>10대</th>
+                                                        <th>20대</th>
+                                                        <th>30대</th>
+                                                        <th>40대</th>
+                                                        <th>50대</th>
+                                                        <th>남자</th>
+                                                        <th>여자</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5.5</td>
+                                                        <td>12.2</td>
+                                                        <td>32.2</td>
+                                                        <td>15.6</td>
+                                                        <td>22.5</td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-
+                    </div>
 
                 </div>
                 <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">bbbbb</div>
                 <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">ccccc</div>
-                <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">ddddd</div>
+                <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+
+                    <!-- 타입필터 : 종합 / 드라마 / 비드라마 -->
+                    <ul class="nav nav-tabs typeFilter" id="tab4TypeFilter" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="tab4TypeFilter1" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">종합</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab4TypeFilter2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">드라마</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab4TypeFilter3" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">비드라마</button>
+                        </li>
+                        <div class="label">
+                            화제성 점유율
+                        </div>
+                    </ul>
+
+                    <div class="accordion innerFull" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <div class="rank">1.</div>
+                              <img class="thumbImg" src="https://search.pstatic.net/common?type=f&size=210x236&quality=90&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20230322_157%2F1679451129642iTScy_JPEG%2F60_main_image_new_1679451129615.jpg" alt="더 글로리">
+                              <div class="infoWrap">
+                                  <div class="tit">안재현</div>
+                                  <div class="subTit">Jae Hyun Ahn</div>
+                                  <div class="value1">더 글로리 파트 2</div>
+                                  <div class="value2">The Gloay Part 2</div>
+                              </div>
+                              <div class="score">52.9%</div>
+                              <div class="hasLink">자세히 보기</div>
+                            </button>
+                          </h2>
+
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row detailInfo">
+                                    <div class="col-6">
+                                        <div class="tit">Channel</div>
+                                        <div class="value">Netflix</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">Production</div>
+                                        <div class="value">화담앤픽쳐스, 화담앤픽쳐스2, 위너 브라더스</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">OPEN</div>
+                                        <div class="value">2022.12.30</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">Episode</div>
+                                        <div class="value">8</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">감독</div>
+                                        <div class="value">김감독</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">작가</div>
+                                        <div class="value">김작가</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">배우</div>
+                                        <div class="value">송혜교, 임지연, 이제훈, 최민식, 배우1, 배우2</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">Genre</div>
+                                        <div class="value">복수, 스릴러, 학교/교육</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">Who</div>
+                                        <div class="value">교사,의사,기상캐스터,기업대표,승무원</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">Where</div>
+                                        <div class="value">고등학교, 초등학교, 기원, 대학교, 교회, 병원</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">When</div>
+                                        <div class="value">현대극</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">Buzz & Feel</div>
+                                        <div class="value">#복수#배우#공개#작가#연기#폭력#생각#가해자# 여자#학교#재밌다#피해자#처절#학교폭력#영혼#소용돌이#남편#친구#바둑#상처#궁금하다#악역</div>
+                                    </div>
+                                </div>
+                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">FUNdex 분석결과 보기</a>
+
+                                <div class="chartTit">최근 8주 화제성 점수 추이</div>
+
+                                <!-- FUNdex Charrt -->
+                                <div class="chartWrap">
+                                    <canvas id="myChart4"></canvas>
+                                </div>
+
+                                <!-- Table -->
+                                <div class="tableWrap">
+                                    <div class="tableItem">
+                                        <table class="headerTable">
+                                            <tbody>
+                                                <tr><th>방송주차(w)</th></tr>
+                                                <tr><th>화제성</th></tr>
+                                                <tr><th class="under">NEWS</th></tr>
+                                                <tr><th class="under">NEWS</th></tr>
+                                                <tr><th class="under">NEWS</th></tr>
+                                                <tr><th>송혜교</th></tr>
+                                                <tr><th>임지연</th></tr>
+                                                <tr><th>차주영</th></tr>
+                                                <tr><th>검색순위</th></tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="scrollDiv">
+                                            <table class="bodyTable" style="min-width: 540px;">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>w1</th>
+                                                        <th>w2</th>
+                                                        <th>w3</th>
+                                                        <th>w4</th>
+                                                        <th>w5</th>
+                                                        <th>w6</th>
+                                                        <th>w7</th>
+                                                        <th>w8</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tableItem">
+                                        <table class="headerTable">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2" style="height: 70px;">검색반응(%)</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="average">평균</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+    
+                                        <div class="scrollDiv">
+                                            <table class="bodyTable" style="min-width: 340px;">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>10대</th>
+                                                        <th>20대</th>
+                                                        <th>30대</th>
+                                                        <th>40대</th>
+                                                        <th>50대</th>
+                                                        <th>남자</th>
+                                                        <th>여자</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5.5</td>
+                                                        <td>12.2</td>
+                                                        <td>32.2</td>
+                                                        <td>15.6</td>
+                                                        <td>22.5</td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="rank">2.</div>
+                                <img class="thumbImg" src="https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2F154%2F20200305165405621.jpg" alt="송혜교">
+                                <div class="infoWrap">
+                                    <div class="tit">송혜교</div>
+                                    <div class="subTit">Hye Kyo Song</div>
+                                    <div class="value1">더 글로리 파트 2</div>
+                                    <div class="value2">The Gloay Part 2</div>
+                                </div>
+                                <div class="score">52.9%</div>
+                                <div class="hasLink">자세히 보기</div>
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row detailInfo">
+                                    <div class="col-6">
+                                        <div class="tit">Channel</div>
+                                        <div class="value">Netflix</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">Production</div>
+                                        <div class="value">화담앤픽쳐스, 화담앤픽쳐스2, 위너 브라더스</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">OPEN</div>
+                                        <div class="value">2022.12.30</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">Episode</div>
+                                        <div class="value">8</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">감독</div>
+                                        <div class="value">김감독</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="tit">작가</div>
+                                        <div class="value">김작가</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">배우</div>
+                                        <div class="value">송혜교, 임지연, 이제훈, 최민식, 배우1, 배우2</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">Genre</div>
+                                        <div class="value">복수, 스릴러, 학교/교육</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">Who</div>
+                                        <div class="value">교사,의사,기상캐스터,기업대표,승무원</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">Where</div>
+                                        <div class="value">고등학교, 초등학교, 기원, 대학교, 교회, 병원</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">When</div>
+                                        <div class="value">현대극</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tit">Buzz & Feel</div>
+                                        <div class="value">#복수#배우#공개#작가#연기#폭력#생각#가해자# 여자#학교#재밌다#피해자#처절#학교폭력#영혼#소용돌이#남편#친구#바둑#상처#궁금하다#악역</div>
+                                    </div>
+                                </div>
+                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">FUNdex 분석결과 보기</a>
+
+                                <div class="chartTit">최근 8주 화제성 점수 추이</div>
+
+                                <!-- FUNdex Charrt -->
+                                <div class="chartWrap">
+                                    <canvas id="myChart5"></canvas>
+                                </div>
+
+                                <!-- Table -->
+                                <div class="tableWrap">
+                                    <div class="tableItem">
+                                        <table class="headerTable">
+                                            <tbody>
+                                                <tr><th>방송주차(w)</th></tr>
+                                                <tr><th>화제성</th></tr>
+                                                <tr><th class="under">NEWS</th></tr>
+                                                <tr><th class="under">NEWS</th></tr>
+                                                <tr><th class="under">NEWS</th></tr>
+                                                <tr><th>송혜교</th></tr>
+                                                <tr><th>임지연</th></tr>
+                                                <tr><th>차주영</th></tr>
+                                                <tr><th>검색순위</th></tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="scrollDiv">
+                                            <table class="bodyTable" style="min-width: 540px;">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>w1</th>
+                                                        <th>w2</th>
+                                                        <th>w3</th>
+                                                        <th>w4</th>
+                                                        <th>w5</th>
+                                                        <th>w6</th>
+                                                        <th>w7</th>
+                                                        <th>w8</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tableItem">
+                                        <table class="headerTable">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2" style="height: 70px;">검색반응(%)</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="average">평균</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+    
+                                        <div class="scrollDiv">
+                                            <table class="bodyTable" style="min-width: 340px;">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>10대</th>
+                                                        <th>20대</th>
+                                                        <th>30대</th>
+                                                        <th>40대</th>
+                                                        <th>50대</th>
+                                                        <th>남자</th>
+                                                        <th>여자</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5.5</td>
+                                                        <td>12.2</td>
+                                                        <td>32.2</td>
+                                                        <td>15.6</td>
+                                                        <td>22.5</td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                        <td class="average">1</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div class="rank">3.</div>
+                                <img class="thumbImg" src="https://search.pstatic.net/common?type=f&size=210x236&quality=90&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20230322_269%2F1679451609375yrwjb_JPEG%2F60_main_image_new_1679451609363.jpg" alt="차주영">
+                                <div class="infoWrap">
+                                    <div class="tit">자세히 보기 없는 타입</div>
+                                    <div class="subTit">Joo Young Cha</div>
+                                    <div class="value1">더 글로리 파트 2</div>
+                                    <div class="value2">The Gloay Part 2</div>
+                                </div>
+                                <div class="score">52.9%</div>
+                                <div class="hasLink">자세히 보기</div>
+                            </button>
+                          </h2>
+                          <!-- .accordion-collapse 요소가 없으면 .hasLink(자세히보기) 는 display 되지 않도록 style 구성함 -->
+                          
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <div class="inner">
-          
-      
 
 
+    <section class="mainAbout">
+        <div class="inner">
+            <div>조사소개 About Research</div>
+            <p class="text">
+                K-콘텐츠 경쟁력 분석 전문 기관인 굿데이터코퍼레이션 발표한 화제성 순위는 TV, OTT에서 방송 또는 공개 중이 거나 예정인 드라마, 예능, 시사, 쇼와 이 프로그램에 출 연한 출연자(PLAYER)를 대상으로 뉴스 기사, VON(블로 그/커뮤니티/카페), 동영상, SNS에서 발생한 프로그램 관 련 정보들과 이에 대한 네티즌 반응을 분석한 결과임<br>
+                조사대상 Contents 채널 : 지상파, 종합편성, 케이블 39개사, OTT 5개사 프로그램 : TV드라마, TV예능,정보,시사, OTT 오리지널 드라마, OTT 오리지널 SHOW (뉴스, 스포츠 중계, 영화 등은 조사 대상에서 제외됨) 범위 : 국내 제작 또는 국내 기술 및 인력이 투입된 프로 그램에 한하여 조사됨.
+            </p>
+            <div>업데이트 Update</div>
+            <p class="text">
+                회원 대상 데이터 업데이트는 일간은 매일 18시에, 주간 은 월요일 12시에 실시되며, 비회원 대상 주간 Top10 순 위는 화요일 12시에 업데이트 됩니다.
+            </p>
+            <div>문의연락 Contact us</div>
+            <a class="text" href="mailto:help@gooddata.co.kr">help@gooddata.co.kr</a>
+        </div>
+    </section>
 
-          <!-- OFF CANVAS -->
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-              <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <!-- OFF CANVAS -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="share" tabindex="-1" aria-labelledby="shareLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="shareLabel">공유하기</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <span>sns</span>
+              <span>sns</span>
+              <span>sns</span>
+              <div>
+                  <input type="text">
+                  <button>복사</button>
               </div>
-              <div class="offcanvas-body">
-                  <div>
-                  Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                  </div>
-                  <div class="dropdown mt-3">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                      Dropdown button
-                  </button>
-                  <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                  </div>
-              </div>
-          </div>
-          
-          <!-- Modal -->
-          <div class="modal fade" id="share" tabindex="-1" aria-labelledby="shareLabel" aria-hidden="true">
-              <div class="modal-dialog">
-              <div class="modal-content">
-                  <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="shareLabel">공유하기</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <span>sns</span>
-                    <span>sns</span>
-                    <span>sns</span>
-                    <div>
-                        <input type="text">
-                        <button>복사</button>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-              </div>
-              </div>
-          </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
     </div>
 
     <footer>
@@ -322,9 +1448,254 @@
     <!-- FUNdex chart -->
     <script type="text/javascript">
         
-        const ctx = document.getElementById('myChart');
+        const ctx1 = document.getElementById('myChart1');
+        const ctx2 = document.getElementById('myChart2');
+        const ctx3 = document.getElementById('myChart3');
+        const ctx4 = document.getElementById('myChart4');
+        const ctx5 = document.getElementById('myChart5');
+        const ctx6 = document.getElementById('myChart6');
 
-        new Chart(ctx, {
+        new Chart(ctx1, {
+            type: 'line',
+            data: {
+                labels: ['w1', 'w2', 'w3', 'w4', 'w5', 'w6', 'w7', 'w8'],
+                datasets: [
+                    {
+                        label: '더 글로라 파트2',
+                        data: [12, 19, 3, 5, 2, 3,4,5],
+                        borderWidth: 2,
+                        borderColor: 'rgba(255, 190, 36, 1)',
+                        pointRadius: 0,
+                    },
+                    {
+                        label: 'OTT 드라마 평균',
+                        data: [15, 12, 13, 4, 3, 4,12,7],
+                        borderWidth: 2,
+                        borderColor: 'rgba(20, 86, 126, 1)',
+                        pointRadius: 0,
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio:false,
+                // aspectRatio:2,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend : {
+                        // fontColor: '#fff',
+                        position : 'bottom',
+                        // rtl : true,
+                        labels : {
+                            fontColor: '#ffffff',
+                            boxWidth : 10,
+                            boxHeight : 4,
+                        }
+                    },
+                    // tooltip : {
+                    //     enabled: false,
+                    //     external: 'average'
+                    // }
+                }
+            }
+        });
+        new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: ['w1', 'w2', 'w3', 'w4', 'w5', 'w6', 'w7', 'w8'],
+                datasets: [
+                    {
+                        label: '더 글로라 파트2',
+                        data: [12, 19, 3, 5, 2, 3,4,5],
+                        borderWidth: 2,
+                        borderColor: 'rgba(255, 190, 36, 1)',
+                        pointRadius: 0,
+                    },
+                    {
+                        label: 'OTT 드라마 평균',
+                        data: [15, 12, 13, 4, 3, 4,12,7],
+                        borderWidth: 2,
+                        borderColor: 'rgba(20, 86, 126, 1)',
+                        pointRadius: 0,
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio:false,
+                // aspectRatio:2,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend : {
+                        // fontColor: '#fff',
+                        position : 'bottom',
+                        // rtl : true,
+                        labels : {
+                            fontColor: '#ffffff',
+                            boxWidth : 10,
+                            boxHeight : 4,
+                        }
+                    },
+                    // tooltip : {
+                    //     enabled: false,
+                    //     external: 'average'
+                    // }
+                }
+            }
+        });
+        new Chart(ctx3, {
+            type: 'line',
+            data: {
+                labels: ['w1', 'w2', 'w3', 'w4', 'w5', 'w6', 'w7', 'w8'],
+                datasets: [
+                    {
+                        label: '더 글로라 파트2',
+                        data: [12, 19, 3, 5, 2, 3,4,5],
+                        borderWidth: 2,
+                        borderColor: 'rgba(255, 190, 36, 1)',
+                        pointRadius: 0,
+                    },
+                    {
+                        label: 'OTT 드라마 평균',
+                        data: [15, 12, 13, 4, 3, 4,12,7],
+                        borderWidth: 2,
+                        borderColor: 'rgba(20, 86, 126, 1)',
+                        pointRadius: 0,
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio:false,
+                // aspectRatio:2,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend : {
+                        // fontColor: '#fff',
+                        position : 'bottom',
+                        // rtl : true,
+                        labels : {
+                            fontColor: '#ffffff',
+                            boxWidth : 10,
+                            boxHeight : 4,
+                        }
+                    },
+                    // tooltip : {
+                    //     enabled: false,
+                    //     external: 'average'
+                    // }
+                }
+            }
+        });
+        new Chart(ctx4, {
+            type: 'line',
+            data: {
+                labels: ['w1', 'w2', 'w3', 'w4', 'w5', 'w6', 'w7', 'w8'],
+                datasets: [
+                    {
+                        label: '더 글로라 파트2',
+                        data: [12, 19, 3, 5, 2, 3,4,5],
+                        borderWidth: 2,
+                        borderColor: 'rgba(255, 190, 36, 1)',
+                        pointRadius: 0,
+                    },
+                    {
+                        label: 'OTT 드라마 평균',
+                        data: [15, 12, 13, 4, 3, 4,12,7],
+                        borderWidth: 2,
+                        borderColor: 'rgba(20, 86, 126, 1)',
+                        pointRadius: 0,
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio:false,
+                // aspectRatio:2,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend : {
+                        // fontColor: '#fff',
+                        position : 'bottom',
+                        // rtl : true,
+                        labels : {
+                            fontColor: '#ffffff',
+                            boxWidth : 10,
+                            boxHeight : 4,
+                        }
+                    },
+                    // tooltip : {
+                    //     enabled: false,
+                    //     external: 'average'
+                    // }
+                }
+            }
+        });
+        new Chart(ctx5, {
+            type: 'line',
+            data: {
+                labels: ['w1', 'w2', 'w3', 'w4', 'w5', 'w6', 'w7', 'w8'],
+                datasets: [
+                    {
+                        label: '더 글로라 파트2',
+                        data: [12, 19, 3, 5, 2, 3,4,5],
+                        borderWidth: 2,
+                        borderColor: 'rgba(255, 190, 36, 1)',
+                        pointRadius: 0,
+                    },
+                    {
+                        label: 'OTT 드라마 평균',
+                        data: [15, 12, 13, 4, 3, 4,12,7],
+                        borderWidth: 2,
+                        borderColor: 'rgba(20, 86, 126, 1)',
+                        pointRadius: 0,
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio:false,
+                // aspectRatio:2,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend : {
+                        // fontColor: '#fff',
+                        position : 'bottom',
+                        // rtl : true,
+                        labels : {
+                            fontColor: '#ffffff',
+                            boxWidth : 10,
+                            boxHeight : 4,
+                        }
+                    },
+                    // tooltip : {
+                    //     enabled: false,
+                    //     external: 'average'
+                    // }
+                }
+            }
+        });
+        new Chart(ctx6, {
             type: 'line',
             data: {
                 labels: ['w1', 'w2', 'w3', 'w4', 'w5', 'w6', 'w7', 'w8'],

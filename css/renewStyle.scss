@@ -264,9 +264,18 @@ $innerPadding:15px;
         & + .accordion-item {
             margin-top: 4px;
         }
+        &:has(.accordion-collapse) {
+            .accordion-button {
+                cursor: pointer;
+            }
+            .hasLink {
+                display: block;
+            }
+        }
     }
     
     .accordion-button {
+        cursor: default;
         box-shadow: none;
         outline: 0;
         border-radius: 0 !important;
@@ -297,7 +306,7 @@ $innerPadding:15px;
             .tit {
                 font-size: 16px;
             }
-            .tit-en {
+            .subTit {
                 opacity: 0.5;
                 margin-top: 2px;
             }
@@ -309,6 +318,12 @@ $innerPadding:15px;
                 height: 8px;
                 background: rgba(255, 255, 255, 0.4);
                 margin: 0 6px;
+            }
+            .value1 {
+                margin-top: 14px;
+            }
+            .value2 {
+                margin-top: 2px;
             }
         }
         .score {
@@ -327,6 +342,7 @@ $innerPadding:15px;
             bottom: 17px;
             right: 20px;
             color: rgba(255, 255, 255, 0.5);
+            display: none;
         }
     }
     .accordion-body {
@@ -383,4 +399,82 @@ $innerPadding:15px;
 }
 .chartWrap {
     height: 210px;
+}
+
+.tableWrap {
+    margin-top: 30px;
+    // overflow: auto;
+    .tableItem {
+        padding-left: 100px;
+        position: relative;
+        & + .tableItem {
+            margin-top:15px;
+        }
+    }
+    table {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+        border-collapse: collapse;
+    }
+    th,td {
+        border: 1px solid #394150;
+        text-align: center;
+        padding: 10px;
+    }
+    th {
+        background: rgba(255, 255, 255, 0.04);
+    }
+    td {
+        color: #C79A2E;
+    }
+    .under {
+        position: relative;
+        padding-left: 19px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 14px;
+            left: 10px;
+            display: block;
+            width: 5px;
+            height: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-top: 0;
+            border-right: 0;
+        }
+    }
+    .average {
+        color: #099BF5;
+    }
+    .headerTable {
+        width: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        th {
+            text-align: left;
+        }
+    }
+    .scrollDiv {
+        margin-left: -1px;
+        overflow: auto;
+    }
+    .bodyTable {
+        width: 100%;
+    }
+}
+
+.mainAbout {
+    padding-top: 40px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 162%;
+    color: #899CB9;
+    .text {
+        color: #586477;
+        margin-top: 4px;
+        margin-bottom: 16px;
+    }
 }

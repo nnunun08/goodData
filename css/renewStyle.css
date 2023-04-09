@@ -261,7 +261,14 @@ footer a {
 .mainCon .accordion-item + .accordion-item {
   margin-top: 4px;
 }
+.mainCon .accordion-item:has(.accordion-collapse) .accordion-button {
+  cursor: pointer;
+}
+.mainCon .accordion-item:has(.accordion-collapse) .hasLink {
+  display: block;
+}
 .mainCon .accordion-button {
+  cursor: default;
   box-shadow: none;
   outline: 0;
   border-radius: 0 !important;
@@ -295,7 +302,7 @@ footer a {
 .mainCon .accordion-button .infoWrap .tit {
   font-size: 16px;
 }
-.mainCon .accordion-button .infoWrap .tit-en {
+.mainCon .accordion-button .infoWrap .subTit {
   opacity: 0.5;
   margin-top: 2px;
 }
@@ -307,6 +314,12 @@ footer a {
   height: 8px;
   background: rgba(255, 255, 255, 0.4);
   margin: 0 6px;
+}
+.mainCon .accordion-button .infoWrap .value1 {
+  margin-top: 14px;
+}
+.mainCon .accordion-button .infoWrap .value2 {
+  margin-top: 2px;
 }
 .mainCon .accordion-button .score {
   position: absolute;
@@ -324,6 +337,7 @@ footer a {
   bottom: 17px;
   right: 20px;
   color: rgba(255, 255, 255, 0.5);
+  display: none;
 }
 .mainCon .accordion-body .btn {
   width: 100%;
@@ -374,4 +388,81 @@ footer a {
 
 .chartWrap {
   height: 210px;
+}
+
+.tableWrap {
+  margin-top: 30px;
+}
+.tableWrap .tableItem {
+  padding-left: 100px;
+  position: relative;
+}
+.tableWrap .tableItem + .tableItem {
+  margin-top: 15px;
+}
+.tableWrap table {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  border-collapse: collapse;
+}
+.tableWrap th, .tableWrap td {
+  border: 1px solid #394150;
+  text-align: center;
+  padding: 10px;
+}
+.tableWrap th {
+  background: rgba(255, 255, 255, 0.04);
+}
+.tableWrap td {
+  color: #C79A2E;
+}
+.tableWrap .under {
+  position: relative;
+  padding-left: 19px;
+}
+.tableWrap .under::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  display: block;
+  width: 5px;
+  height: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-top: 0;
+  border-right: 0;
+}
+.tableWrap .average {
+  color: #099BF5;
+}
+.tableWrap .headerTable {
+  width: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.tableWrap .headerTable th {
+  text-align: left;
+}
+.tableWrap .scrollDiv {
+  margin-left: -1px;
+  overflow: auto;
+}
+.tableWrap .bodyTable {
+  width: 100%;
+}
+
+.mainAbout {
+  padding-top: 40px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 162%;
+  color: #899CB9;
+}
+.mainAbout .text {
+  color: #586477;
+  margin-top: 4px;
+  margin-bottom: 16px;
 }/*# sourceMappingURL=renewStyle.css.map */
