@@ -465,4 +465,124 @@ footer a {
   color: #586477;
   margin-top: 4px;
   margin-bottom: 16px;
+}
+
+.offcanvas-header {
+  padding: 24px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.offcanvas-header .offcanvas-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: #099BF5;
+}
+.offcanvas-header .btn-close {
+  width: 34px;
+  height: 34px;
+  border: 0;
+  right: 8px;
+  box-sizing: border-box;
+  background: url(../img/offcanvas-close.svg) center/cover no-repeat;
+}
+
+.offcanvas-body {
+  padding: 10px;
+}
+
+.fxChain1 {
+  max-width: 80vw;
+}
+.fxChain1 .title {
+  padding: 10px 0;
+}
+.fxChain1 .title .tit {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.fxChain1 .title .subTit {
+  font-size: 13px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 2px;
+}
+.fxChain1 .chain {
+  padding: 8px 0;
+}
+.fxChain1 .chain .person {
+  margin-bottom: 5px;
+  position: relative;
+}
+.fxChain1 .chain .person::after {
+  content: "FUNdex";
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+  color: #586477;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 162%;
+}
+.fxChain1 .chain .person .name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 162%;
+}
+.fxChain1 .chain .person .role {
+  height: 21px;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 4px;
+  padding: 1px 4px;
+  border-radius: 4px;
+  background-color: #181E29;
+  color: #586477;
+  font-size: 12px;
+}
+.fxChain1 .chain .list {
+  padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 162%;
+  margin-bottom: 16px;
+}
+.fxChain1 .chain .list li {
+  padding: 3px 10px;
+  background-color: #394150;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.fxChain1 .chain .list li + li {
+  margin-top: 1px;
+}
+.fxChain1 .chain .list .year {
+  color: rgba(255, 255, 255, 0.3);
+}
+.fxChain1 .chain .list .year::after {
+  content: "";
+  background: rgba(156, 160, 167, 0.5);
+  width: 1px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.fxChain1 .chain .list .work {
+  flex: 1 0 0;
+  color: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 4px;
+}
+.fxChain1 .chain .list .fundex {
+  flex: 0 0 30px;
+  width: 30px;
+  text-align: center;
+  color: #099BF5;
 }/*# sourceMappingURL=renewStyle.css.map */

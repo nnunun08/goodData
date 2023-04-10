@@ -478,3 +478,125 @@ $innerPadding:15px;
         margin-bottom: 16px;
     }
 }
+
+@mixin offcanvas {
+    .offcanvas-header {
+        padding: 24px 16px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        .offcanvas-title {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 162%;
+            color: #099BF5;
+        }
+        .btn-close {
+            width: 34px;
+            height: 34px;
+            border:0;
+            right: 8px;
+            box-sizing: border-box;
+            background: url(../img/offcanvas-close.svg) center/cover no-repeat;
+        }
+    }
+    .offcanvas-body {
+        padding: 10px 
+    }
+}
+@include offcanvas;
+
+.fxChain1 {
+    max-width: 80vw;
+    .title {
+        padding: 10px 0;
+        .tit {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        .subTit {
+            font-size: 13px;
+            line-height: 16px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 2px;
+        }
+    }
+    .chain {
+        padding: 8px 0;
+        .person {
+            margin-bottom: 5px;
+            position: relative;
+            &::after {
+                content: 'FUNdex';
+                position: absolute;
+                top: 50%;
+                right: 6px;
+                transform: translateY(-50%);
+                color: #586477;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 162%;
+            }
+            .name {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 162%;
+            }
+            .role {
+                height: 21px;
+                display: inline-flex;
+                align-items: center;
+                margin-left: 4px;
+                padding: 1px 4px;
+                border-radius: 4px;
+                background-color: #181E29;
+                color: #586477;
+                font-size: 12px;
+            }
+        }
+        .list {
+            padding: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 162%;
+            margin-bottom: 16px;
+            li {
+                padding: 3px 10px;
+                background-color: #394150;
+                display: flex;
+                align-items: center;
+                flex-wrap: nowrap;
+            }
+            li + li {
+                margin-top: 1px;
+            }
+            .year {
+                color: rgba(255, 255, 255, 0.3);
+                &::after {
+                    content: '';
+                    background: rgba(156, 160, 167, 0.5);
+                    width: 1px;
+                    height: 10px;
+                    display: inline-block;
+                    margin-left: 6px;
+                    margin-right: 6px;
+                }
+            }
+            .work {
+                flex: 1 0 0;
+                color: rgba(255, 255, 255, 0.7);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                padding-right: 4px;
+            }
+            .fundex {
+                flex: 0 0 30px;
+                width: 30px;
+                text-align: center;
+                color: #099BF5;
+            }
+        }
+    }
+}
