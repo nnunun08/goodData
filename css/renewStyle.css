@@ -585,4 +585,37 @@ footer a {
   width: 30px;
   text-align: center;
   color: #099BF5;
+}
+
+.fxChain2 {
+  line-height: 162%;
+  font-weight: 400;
+  font-size: 13px;
+}
+.fxChain2 .top {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.fxChain2 .img {
+  width: 90px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.fxChain2 .name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+}
+.fxChain2 .name-en {
+  color: rgba(255, 255, 255, 0.5);
+}
+.fxChain2 .agency {
+  color: #586477;
+  margin-bottom: 9px;
+}
+.fxChain2 .offcanvas-body {
+  padding: 10px 16px;
 }/*# sourceMappingURL=renewStyle.css.map */
