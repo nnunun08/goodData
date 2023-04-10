@@ -18,7 +18,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary header">
         <div class="container-fluid inner">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="./index.html">
                 <img class="goodData-logo" src="./img/logo.svg" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,22 +31,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">관련기사</a>
+                        <a class="nav-link active" aria-current="page" href="./article.html">관련기사</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">스페셜 리포트</a>
+                        <a class="nav-link" aria-current="page" href="./special.html">스페셜 리포트</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">순위표</a>
+                        <a class="nav-link" aria-current="page" href="./ranking.html">순위표</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">데이터 서비스</a>
+                        <a class="nav-link" aria-current="page" href="./service.html">데이터 서비스</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">화제성 분석</a>
+                        <a class="nav-link" aria-current="page" href="./issue.html">화제성 분석</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">회사소개</a>
+                        <a class="nav-link" aria-current="page" href="./company.html">회사소개</a>
                     </li>
                 </ul>
             </div>
@@ -1618,7 +1618,66 @@
                 </div>
             </div>
             
+            <div class="history">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th><div>출연작</div></th>
+                            <th><div>FUNdex</div></th>
+                            <th><div>출연자 최고 순위</div></th>
+                        </tr>
+                        <tr>
+                            <td><div>2022 더글로리</div></td>
+                            <td><div>A+2</div></td>
+                            <td><div>TV-OTT 4위</div></td>
+                        </tr>
+                        <tr>
+                            <td><div>2022 더글로리</div></td>
+                            <td><div>A+2</div></td>
+                            <td>
+                                <div>TV 1위</div>
+                                <div>TV-OTT 3위</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div>2022 더글로리</div></td>
+                            <td><div>A+2</div></td>
+                            <td><div>TV-OTT 4위</div></td>
+                        </tr>
+                        <tr>
+                            <td><div>2022 더글로리</div></td>
+                            <td><div>A+2</div></td>
+                            <td><div>TV-OTT 4위</div></td>
+                        </tr>
+                        <tr>
+                            <td><div>2022 더글로리</div></td>
+                            <td><div>A+2</div></td>
+                            <td><div>TV-OTT 4위</div></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             
+            <div class="guide">
+                <div class="tit">FUNdex</div>
+                <div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>화제성 4단계</th>
+                                <td>Gold, A, B, C</td>
+                            </tr>
+                            <tr>
+                                <th>Fx(재미강도지수) 7단계</th>
+                                <td>+3, +1, +1, 0, -1, -2, -3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>최고는 G+3 ~ 최저는 C-3</p>
+                <p>A-3 : 화제성은 높았으나 뒤로 갈 수록 재미 강도는 낮아지는 드라마</p>
+                <p>B+3 : 화제성은 낮았으나 뒤로 갈 수록 재미 강도 가 높아지는 드라마</p>
+            </div>
         </div>
     </div>
     
@@ -1631,17 +1690,24 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <span>sns</span>
-              <span>sns</span>
-              <span>sns</span>
-              <div>
-                  <input type="text">
-                  <button>복사</button>
+                <div class="snsWRap">
+                    <a href="#" class="sns kakao">
+                        <div class="img"></div>
+                        <div class="tit">카카오톡</div>
+                    </a>
+                    <a href="#" class="sns facebook">
+                        <div class="img"></div>
+                        <div class="tit">페이스북</div>
+                    </a>
+                    <a href="#" class="sns twitter">
+                        <div class="img"></div>
+                        <div class="tit">트위터</div>
+                    </a>
+                </div>
+              <div class="linkCopy">
+                  <input type="text" value="https://gooddata.co.kr">
+                  <button class="copyBtn">URL 복사</button>
               </div>
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
         </div>
