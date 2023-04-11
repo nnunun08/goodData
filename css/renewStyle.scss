@@ -769,6 +769,14 @@ $innerPadding:15px;
         color: rgba(255, 255, 255, 0.5);
         margin-bottom: 0;
     }
+    .pageDesc {
+        font-size: 13px;
+        line-height: 162%;
+        color: #FFFFFF;
+        display: block;
+        margin-top: 45px;
+        margin-bottom: 10px;
+    }
 }
 
 .news {
@@ -968,6 +976,51 @@ $innerPadding:15px;
             &:hover {
                 text-decoration: underline;
             }
+        }
+    }
+}
+
+.serviceVideo {
+    margin-bottom: 45px;
+    video {
+        width: 100%;
+        aspect-ratio: 16/9;
+        background-color: #000;
+    }
+    .disc {
+        display: block;
+        font-size: 12px;
+        line-height: 162%;
+        text-align: right;
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: 8px;
+    }
+}
+
+.gdService {
+    .innerFull {
+        padding: 0;
+    }
+    .item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+        padding: 14px 20px;
+        background-color: #394150;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 162%;
+        color: #FFFFFF;
+        .itemImg {
+            width: 30%;
+            max-width: 160px;
+            min-width: 123px;
+            aspect-ratio: 123/77;
+            flex: 0 0 30%;
+        }
+        p {
+            margin: 0;
+            margin-left: 10px;
         }
     }
 }

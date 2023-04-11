@@ -758,6 +758,14 @@ footer a {
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 0;
 }
+.page .pageDesc {
+  font-size: 13px;
+  line-height: 162%;
+  color: #FFFFFF;
+  display: block;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
 
 .news .news_bbs_wrap {
   padding: 0;
@@ -940,4 +948,47 @@ footer a {
 }
 .detailContents .innerFull .back:hover {
   text-decoration: underline;
+}
+
+.serviceVideo {
+  margin-bottom: 45px;
+}
+.serviceVideo video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: #000;
+}
+.serviceVideo .disc {
+  display: block;
+  font-size: 12px;
+  line-height: 162%;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 8px;
+}
+
+.gdService .innerFull {
+  padding: 0;
+}
+.gdService .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  padding: 14px 20px;
+  background-color: #394150;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 162%;
+  color: #FFFFFF;
+}
+.gdService .item .itemImg {
+  width: 30%;
+  max-width: 160px;
+  min-width: 123px;
+  aspect-ratio: 123/77;
+  flex: 0 0 30%;
+}
+.gdService .item p {
+  margin: 0;
+  margin-left: 10px;
 }/*# sourceMappingURL=renewStyle.css.map */
