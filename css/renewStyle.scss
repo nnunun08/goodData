@@ -994,6 +994,7 @@ $innerPadding:15px;
         text-align: right;
         color: rgba(255, 255, 255, 0.5);
         margin-top: 8px;
+        margin-right: 20px;
     }
 }
 
@@ -1021,6 +1022,206 @@ $innerPadding:15px;
         p {
             margin: 0;
             margin-left: 10px;
+        }
+    }
+}
+
+.companyHistory {
+    margin-bottom: 56px;
+    ul {
+        padding: 40px 0;
+        background-image: linear-gradient(180deg, #212936 0%, rgba(33, 41, 54, 0) 13.02%, rgba(33, 41, 54, 0) 86.46%, #212936 100%), linear-gradient(180deg, #0077C1 0%, #FDB813 100%);
+        background-size: 2px 100%;
+        background-position: 6px 0;
+        background-repeat: no-repeat;
+    }
+    li {
+        display: flex;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 142%;
+        color: #FFFFFF;
+        & + li {
+            margin-top: 27px;
+        }
+        .item p {
+            margin:0;
+            & + p {
+                margin-top: 8px;
+            }
+        }
+        .year {
+            padding-left: 31px;
+            box-sizing: border-box;
+            width: 100px;
+            flex: 0 0 100px;
+            position: relative;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 142%;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 4px;
+                left: 0;
+                width: 14px;
+                height: 14px;
+                border-radius: 14px;
+                background-color: #212936;
+                border: 4px solid white;
+            }
+        }
+        &:nth-child(1) {
+            $itemColor : #1C7FAF;
+            .year {color: $itemColor;}
+            .year::before{border-color: $itemColor;}
+        }
+        &:nth-child(2) {
+            $itemColor : #35859E;
+            .year {color: $itemColor;}
+            .year::before{border-color: $itemColor;}
+        }
+        &:nth-child(3) {
+            $itemColor : #4A8A8F;
+            .year {color: $itemColor;}
+            .year::before{border-color: $itemColor;}
+        }
+        &:nth-child(4) {
+            $itemColor : #6D9377;
+            .year {color: $itemColor;}
+            .year::before{border-color: $itemColor;}
+        }
+        &:nth-child(5) {
+            $itemColor : #939D5D;
+            .year {color: $itemColor;}
+            .year::before{border-color: $itemColor;}
+        }
+        &:nth-child(6) {
+            $itemColor : #A7A24F;
+            .year {color: $itemColor;}
+            .year::before{border-color: $itemColor;}
+        }
+        &:nth-child(7) {
+            $itemColor : #C3A93C;
+            .year {color: $itemColor;}
+            .year::before{border-color: $itemColor;}
+        }
+        &:nth-child(8) {
+            $itemColor : #C69E2A;
+            .year {color: $itemColor;}
+            .year::before{border-color: $itemColor;}
+        }
+
+    }
+}
+
+.issueSection {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 162%;
+    color: #AAB8CE;
+    margin-bottom: 92px;
+    margin-top: 12px;
+    .emptySpace {
+        padding-top: 80px;
+    }
+    .conWrap {
+        margin-bottom: 32px;
+        h2 {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 162%;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            padding-left: 19px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 8px;
+                top: 9px;
+                width: 2.5px;
+                height: 2.5px;
+                border-radius: 2.5px;
+                background-color: #AAB8CE;
+            }
+            & + li {
+                margin-top: 8px;
+            }
+        }
+        .blueTit {
+            color: #099BF5;
+            width: 75px;
+            flex: 0 0 75px;
+            display: block;
+        }
+        li:has(.blueTit) {
+            display: flex;
+
+            &::before {
+                background-color: #099BF5;
+            }
+        }
+    }
+    .analyze {
+        .subTit {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 162%;
+            color: #099BF5;
+            margin-bottom: 5px;
+        }
+        .tit {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 132%;
+            color: #FFFFFF;
+            margin-bottom: 16px;
+        }
+        table {
+            width: 100%;
+            table-layout: fixed;
+            font-size: 13px;
+            line-height: 162%;
+            th {
+                font-weight: 700;
+                color: #FFFFFF;
+                padding: 10px 0;
+                border-bottom: 1px solid #FFFFFF;
+            }
+            td {
+                padding: 8px 0;
+                font-weight: 400;
+                color: #AAB8CE;   
+                &:first-child {
+                    color: #ffffff;
+                }
+            }
+            th,td {
+                &:first-child {
+                    width: 30%;
+                    padding-right: 10px;
+                }
+            }
+            .firstRow td {
+                padding-top: 16px;
+            }
+        }
+    }
+    .diagram {
+        text-align: center;
+        background-color: #394150;
+        padding: 40px 0;
+        margin-top: -16px;
+        img {
+            width: 100%;
+            max-width: 420px;
         }
     }
 }

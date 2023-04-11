@@ -965,6 +965,7 @@ footer a {
   text-align: right;
   color: rgba(255, 255, 255, 0.5);
   margin-top: 8px;
+  margin-right: 20px;
 }
 
 .gdService .innerFull {
@@ -991,4 +992,206 @@ footer a {
 .gdService .item p {
   margin: 0;
   margin-left: 10px;
+}
+
+.companyHistory {
+  margin-bottom: 56px;
+}
+.companyHistory ul {
+  padding: 40px 0;
+  background-image: linear-gradient(180deg, #212936 0%, rgba(33, 41, 54, 0) 13.02%, rgba(33, 41, 54, 0) 86.46%, #212936 100%), linear-gradient(180deg, #0077C1 0%, #FDB813 100%);
+  background-size: 2px 100%;
+  background-position: 6px 0;
+  background-repeat: no-repeat;
+}
+.companyHistory li {
+  display: flex;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 142%;
+  color: #FFFFFF;
+}
+.companyHistory li + li {
+  margin-top: 27px;
+}
+.companyHistory li .item p {
+  margin: 0;
+}
+.companyHistory li .item p + p {
+  margin-top: 8px;
+}
+.companyHistory li .year {
+  padding-left: 31px;
+  box-sizing: border-box;
+  width: 100px;
+  flex: 0 0 100px;
+  position: relative;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 142%;
+}
+.companyHistory li .year::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
+  background-color: #212936;
+  border: 4px solid white;
+}
+.companyHistory li:nth-child(1) .year {
+  color: #1C7FAF;
+}
+.companyHistory li:nth-child(1) .year::before {
+  border-color: #1C7FAF;
+}
+.companyHistory li:nth-child(2) .year {
+  color: #35859E;
+}
+.companyHistory li:nth-child(2) .year::before {
+  border-color: #35859E;
+}
+.companyHistory li:nth-child(3) .year {
+  color: #4A8A8F;
+}
+.companyHistory li:nth-child(3) .year::before {
+  border-color: #4A8A8F;
+}
+.companyHistory li:nth-child(4) .year {
+  color: #6D9377;
+}
+.companyHistory li:nth-child(4) .year::before {
+  border-color: #6D9377;
+}
+.companyHistory li:nth-child(5) .year {
+  color: #939D5D;
+}
+.companyHistory li:nth-child(5) .year::before {
+  border-color: #939D5D;
+}
+.companyHistory li:nth-child(6) .year {
+  color: #A7A24F;
+}
+.companyHistory li:nth-child(6) .year::before {
+  border-color: #A7A24F;
+}
+.companyHistory li:nth-child(7) .year {
+  color: #C3A93C;
+}
+.companyHistory li:nth-child(7) .year::before {
+  border-color: #C3A93C;
+}
+.companyHistory li:nth-child(8) .year {
+  color: #C69E2A;
+}
+.companyHistory li:nth-child(8) .year::before {
+  border-color: #C69E2A;
+}
+
+.issueSection {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 162%;
+  color: #AAB8CE;
+  margin-bottom: 92px;
+  margin-top: 12px;
+}
+.issueSection .emptySpace {
+  padding-top: 80px;
+}
+.issueSection .conWrap {
+  margin-bottom: 32px;
+}
+.issueSection .conWrap h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 162%;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.issueSection .conWrap ul {
+  padding: 0;
+  margin: 0;
+}
+.issueSection .conWrap li {
+  padding-left: 19px;
+  position: relative;
+}
+.issueSection .conWrap li::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 9px;
+  width: 2.5px;
+  height: 2.5px;
+  border-radius: 2.5px;
+  background-color: #AAB8CE;
+}
+.issueSection .conWrap li + li {
+  margin-top: 8px;
+}
+.issueSection .conWrap .blueTit {
+  color: #099BF5;
+  width: 75px;
+  flex: 0 0 75px;
+  display: block;
+}
+.issueSection .conWrap li:has(.blueTit) {
+  display: flex;
+}
+.issueSection .conWrap li:has(.blueTit)::before {
+  background-color: #099BF5;
+}
+.issueSection .analyze .subTit {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 162%;
+  color: #099BF5;
+  margin-bottom: 5px;
+}
+.issueSection .analyze .tit {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 132%;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+.issueSection .analyze table {
+  width: 100%;
+  table-layout: fixed;
+  font-size: 13px;
+  line-height: 162%;
+}
+.issueSection .analyze table th {
+  font-weight: 700;
+  color: #FFFFFF;
+  padding: 10px 0;
+  border-bottom: 1px solid #FFFFFF;
+}
+.issueSection .analyze table td {
+  padding: 8px 0;
+  font-weight: 400;
+  color: #AAB8CE;
+}
+.issueSection .analyze table td:first-child {
+  color: #ffffff;
+}
+.issueSection .analyze table th:first-child, .issueSection .analyze table td:first-child {
+  width: 30%;
+  padding-right: 10px;
+}
+.issueSection .analyze table .firstRow td {
+  padding-top: 16px;
+}
+.issueSection .diagram {
+  text-align: center;
+  background-color: #394150;
+  padding: 40px 0;
+  margin-top: -16px;
+}
+.issueSection .diagram img {
+  width: 100%;
+  max-width: 420px;
 }/*# sourceMappingURL=renewStyle.css.map */
