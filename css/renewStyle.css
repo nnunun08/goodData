@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
 :root {
   --bg: #212936;
@@ -118,6 +119,23 @@ footer a {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .header {
+    background-color: transparent !important;
+    width: 100vw;
+    margin-bottom: -60px;
+  }
+  .header .navbar-brand {
+    visibility: hidden;
+  }
+  .header #navbarNav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin: 0;
+  }
+}
 .mainVisual {
   padding: 24px 0 17px;
   background-color: var(--bg-light);
@@ -637,9 +655,11 @@ footer a {
   text-align: left;
 }
 .fxChain2 .history table th:nth-child(2), .fxChain2 .history table td:nth-child(2) {
+  /* evoke0523: 두번째컬럼 width 수정 */
   width: 64px;
 }
 .fxChain2 .history table th:nth-child(3), .fxChain2 .history table td:nth-child(3) {
+  /* evoke0523: 세번째컬럼 width 수정 */
   width: 100px;
 }
 .fxChain2 .history table th {
@@ -880,6 +900,11 @@ footer a {
 }
 .detailContents .innerFull .text p {
   margin: 0;
+}
+.detailContents .innerFull .text img {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
 }
 .detailContents .innerFull .attachWrap {
   margin-bottom: 50px;

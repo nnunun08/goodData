@@ -123,6 +123,25 @@ $innerPadding:15px;
     }
 }
 
+// evoke0523 : 모바일버전에서 헤더 숨김
+@media screen and (max-width:991px) {
+    .header {
+        background-color: transparent !important;
+        width: 100vw;
+        margin-bottom: -60px;
+        .navbar-brand {
+            // display: none;
+            visibility: hidden;
+        }
+        #navbarNav {
+            position: fixed;
+            top: 60px;
+            left: 0;
+            right: 0;
+            margin: 0;
+        }
+    }
+}
 
 .mainVisual {
     padding: 24px 0 17px;
@@ -650,9 +669,11 @@ $innerPadding:15px;
                     text-align: left;
                 }
                 &:nth-child(2) {
+                    /* evoke0523: 두번째컬럼 width 수정 */
                     width: 64px;
                 }
                 &:nth-child(3) {
+                    /* evoke0523: 세번째컬럼 width 수정 */
                     width: 100px;
                 }
             }
@@ -903,6 +924,11 @@ $innerPadding:15px;
             color: #FFFFFF;
             p {
                 margin: 0;
+            }
+            img {
+                display: block;
+                max-width: 100%;
+                margin: 20px auto;
             }
         }
 
