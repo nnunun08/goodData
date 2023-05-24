@@ -40,6 +40,32 @@ footer {
     a {
         color: inherit;
     }
+    .nav {
+        justify-content: center;
+        margin: 0 0 14px;
+        font-size: 13px;
+        .nav-item a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #8a9cb9;
+            &:hover {
+                color: #d6e6ff;
+            }
+        }
+    }
+    @media screen and (max-width:991px) {
+        .nav {
+            flex-direction: column;
+            .nav-item {
+                border-top: 1px solid #1e2838;
+                a {
+                    display: block;
+                    width: 100%;
+                    padding: 8px;
+                }
+            }
+        }
+    }
 }
 
 $innerPadding:15px;
@@ -61,6 +87,7 @@ $innerPadding:15px;
 }
 
 .header {
+    display: none;
     .goodData-logo {
         height: 34px;
     }
