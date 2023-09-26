@@ -279,7 +279,7 @@ footer .nav .nav-item a:hover {
 }
 .mainCon .typeFilter .label {
   position: absolute;
-  right: 20px;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
   font-weight: 400;
@@ -289,19 +289,19 @@ footer .nav .nav-item a:hover {
   color: #586477;
 }
 .mainCon .typeFilter .label Select {
-  font-family: inherit; /* 폰트 상속 */
+  /* 0926 css, 이미지 추가 */
+  font-family: inherit;
   border: 0;
   background: var(--bg-light) url(../img/_ic_select_arr.svg) 90% 50% no-repeat;
-  /* 네이티브 화살표를 커스텀 화살표로 대체 */
   -webkit-appearance: none;
-  /* 네이티브 외형 감추기 */
   -moz-appearance: none;
   appearance: none;
   color: #9DA3AE;
   padding: 10px 25px 10px 10px;
 }
 .mainCon .typeFilter .label Select::-ms-expand {
-  display: none; /* 화살표 없애기 for IE10, 11*/
+  /* 0926 css 추가 */
+  display: none;
 }
 @media screen and (max-width: 991px) {
   .mainCon .typeFilter .label {
@@ -400,6 +400,20 @@ footer .nav .nav-item a:hover {
   right: 20px;
   color: rgba(255, 255, 255, 0.5);
   display: none;
+}
+.mainCon .accordion-button .fundex {
+  /* 0926 css 추가 */
+  position: absolute;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  bottom: 17px;
+  right: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+.mainCon .accordion-button:has(.fundex) {
+  cursor: pointer;
 }
 .mainCon .accordion-body .btn {
   width: 100%;
