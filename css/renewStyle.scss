@@ -1313,3 +1313,298 @@ $innerPadding:15px;
         }
     }
 }
+
+.awardVisual {
+    .visualDim {
+        height: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.45) 60.94%, rgba(0, 0, 0, 0.60) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.63%, rgba(0, 0, 0, 0.27) 69.08%, rgba(0, 0, 0, 0.44) 76.26%, rgba(0, 0, 0, 0.59) 86.81%, rgba(0, 0, 0, 0.80) 100%);
+    }
+    background: url(../img/award/img_awardVisual.jpg) center/cover no-repeat;
+    background-attachment: fixed;
+    height: 665px;
+    color: #fff;
+    line-height: 1;
+    .inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+    }
+    .ci {
+        display: block;
+        width: 345px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 42px;
+        font-weight: bold;
+        margin-bottom: 13px;
+    }
+    p {
+        font-size: 24px;
+        margin-bottom: 60px;
+    }
+}
+
+.awardCon {
+    padding-top: 88px;    
+    padding-bottom: 112px;
+    color: #fff;
+    line-height: 1.62;
+    h3 {
+        font-size: 30px;
+        line-height: 1.62;
+        margin-bottom: 60px;
+    }
+    .twoCol {
+        border-top: rgba(255,255,255,0.2) 1px solid;
+        padding: 20px 0;
+        display: flex;
+        gap: 15px;
+        & + .twoCol {
+            margin-top: 20px;
+        }
+        .left {
+            flex: 0 0 240px;
+            h4 {
+                font-size: 21px;
+                line-height: 1.62;
+                margin-bottom: 0;
+            }
+        }
+        .right {
+            .flex-column {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                & + .flex-column {
+                    margin-top: 26px;
+                }
+            }
+            b {
+                font-weight: normal;
+            }
+            p {
+                font-size: 16px;
+                line-height: 1.62;
+                color: #AAB8CE;
+                margin: 0;
+            }
+            a {
+                color: #099BF5;
+            }
+            .btnWrap {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            .download {
+                &::before {
+                    content: '';
+                    width: 16px;
+                    height: 16px;
+                    background: url(../img/award/ic_download.svg) center no-repeat;
+                }
+                color: #AAB8CE;
+                font-size: 16px;
+                padding: 0 24px;
+                height: 45px;
+                border-radius: 50px;
+                border: 1px solid #AAB8CE;
+                background-color: transparent;
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+                text-decoration: none;
+                box-sizing: border-box;
+            }
+            ul {
+                padding-left: 24px;
+                li {
+                    position: relative;
+                    color: #AAB8CE;
+                    &::before {
+                        content: '';
+                        width: 3px;
+                        height: 3px;
+                        background-color: #AAB8CE;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 11px;
+                        left: -15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.awardList {
+    background-color: #fff;
+    padding-top: 88px;
+    padding-bottom: 150px;
+    margin-bottom: -40px;
+    .part {
+        margin-bottom: 120px;
+    }
+    .pageTit {
+        margin-bottom: 86px;
+        h2 {
+            font-size: 42px;
+            font-weight: bold;
+            margin: 0;
+            line-height: 1.62;
+        }
+        b {
+            font-size: 21px;
+            line-height: 1.62;
+        }
+    }
+    .partTit {
+        font-size: 30px;
+        line-height: 1;
+        letter-spacing: -0.6px;
+    }
+    .partTit-en {
+        font-size: 16px;
+        letter-spacing: 0;
+        margin-bottom: 30px;
+    }
+    .awardContents {
+        display: flex;
+        gap: 40px;
+        .fixedImg {
+            img {
+                width: 280px;
+                position: sticky;
+                top: 30px;
+            }
+        }
+        .itemList {
+            flex: 1 0 0;
+            .item {
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+                padding: 20px 0;
+                border-top: 1px solid #CCC;
+                border-bottom: 1px solid #CCC;
+                margin-bottom: -1px;
+                width: 100%;
+                .top {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    min-height: 36px;
+                }
+                .name {
+                    font-size: 28px;
+                    color: #212936;
+                    line-height: 1;
+                }
+                .badge {
+                    display: inline-flex;
+                    align-items: center;
+                    color: #099BF5;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    padding: 0 16px;
+                    height: 36px;
+                    box-sizing: border-box;
+                    border: 1px solid #099BF5;
+                    border-radius: 50px;
+                }
+                em {
+                    color: rgba(0, 0, 0, 0.50);
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 1.62;
+                }
+                p {
+                    color: rgba(0, 0, 0, 0.50);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    margin: 0;
+                    line-height: 1.62;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    .awardCon .twoCol .right ul,
+    .awardCon .twoCol .right p {
+        font-size: 14px;
+    }
+    .awardCon .twoCol .right ul li::before {
+        top: 9px;
+    }
+    .awardCon .twoCol .right .download {
+        font-size: 14px;
+    }
+    .awardVisual {
+        height: 495px;
+    }
+    .awardVisual .ci {
+        width: 250px;
+    }   
+    .awardCon h3 {
+        font-size: 23px;
+        word-break: keep-all;
+    }
+    .awardList .pageTit h2 {
+        font-size: 32px;
+    }
+    .awardList .pageTit b {
+        font-size: 16px;
+    }
+    .awardList .pageTit {
+        margin-bottom: 56px;
+    }
+    .awardCon .twoCol {
+        flex-direction: column;
+        .left {
+            flex: 0 0 0;
+        }
+    }
+    .awardList .partTit {
+        font-size: 21px;
+    }
+    .awardList .partTit-en {
+        font-size: 14px;
+    }
+    .awardList .awardContents {
+        gap: 15px;
+        // flex-direction: column;
+        .fixedImg img {
+            width: 80px;
+        }
+        .itemList .item {
+            padding: 10px 0;
+        }
+        .itemList .item .name {
+            font-size: 18px;
+        }
+        .itemList .item .badge {
+            height: 30px;
+            font-size: 13px;
+            padding: 0 10px;
+        }
+        .itemList .item .top {
+            gap: 10px;
+        }
+        .itemList .item p,
+        .itemList .item em {
+            font-size: 13px;
+        }
+        
+    }
+}

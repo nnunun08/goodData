@@ -1280,4 +1280,291 @@ footer .nav .nav-item a:hover {
 .issueSection .diagram img {
   width: 100%;
   max-width: 420px;
+}
+
+.awardVisual {
+  background: url(../img/award/img_awardVisual.jpg) center/cover no-repeat;
+  background-attachment: fixed;
+  height: 665px;
+  color: #fff;
+  line-height: 1;
+}
+.awardVisual .visualDim {
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 60.94%, rgba(0, 0, 0, 0.6) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 50.63%, rgba(0, 0, 0, 0.27) 69.08%, rgba(0, 0, 0, 0.44) 76.26%, rgba(0, 0, 0, 0.59) 86.81%, rgba(0, 0, 0, 0.8) 100%);
+}
+.awardVisual .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+.awardVisual .ci {
+  display: block;
+  width: 345px;
+  margin-bottom: 20px;
+}
+.awardVisual h2 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+.awardVisual p {
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+
+.awardCon {
+  padding-top: 88px;
+  padding-bottom: 112px;
+  color: #fff;
+  line-height: 1.62;
+}
+.awardCon h3 {
+  font-size: 30px;
+  line-height: 1.62;
+  margin-bottom: 60px;
+}
+.awardCon .twoCol {
+  border-top: rgba(255, 255, 255, 0.2) 1px solid;
+  padding: 20px 0;
+  display: flex;
+  gap: 15px;
+}
+.awardCon .twoCol + .twoCol {
+  margin-top: 20px;
+}
+.awardCon .twoCol .left {
+  flex: 0 0 240px;
+}
+.awardCon .twoCol .left h4 {
+  font-size: 21px;
+  line-height: 1.62;
+  margin-bottom: 0;
+}
+.awardCon .twoCol .right .flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.awardCon .twoCol .right .flex-column + .flex-column {
+  margin-top: 26px;
+}
+.awardCon .twoCol .right b {
+  font-weight: normal;
+}
+.awardCon .twoCol .right p {
+  font-size: 16px;
+  line-height: 1.62;
+  color: #AAB8CE;
+  margin: 0;
+}
+.awardCon .twoCol .right a {
+  color: #099BF5;
+}
+.awardCon .twoCol .right .btnWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.awardCon .twoCol .right .download {
+  color: #AAB8CE;
+  font-size: 16px;
+  padding: 0 24px;
+  height: 45px;
+  border-radius: 50px;
+  border: 1px solid #AAB8CE;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.awardCon .twoCol .right .download::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(../img/award/ic_download.svg) center no-repeat;
+}
+.awardCon .twoCol .right ul {
+  padding-left: 24px;
+}
+.awardCon .twoCol .right ul li {
+  position: relative;
+  color: #AAB8CE;
+}
+.awardCon .twoCol .right ul li::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background-color: #AAB8CE;
+  border-radius: 50%;
+  position: absolute;
+  top: 11px;
+  left: -15px;
+}
+
+.awardList {
+  background-color: #fff;
+  padding-top: 88px;
+  padding-bottom: 150px;
+  margin-bottom: -40px;
+}
+.awardList .part {
+  margin-bottom: 120px;
+}
+.awardList .pageTit {
+  margin-bottom: 86px;
+}
+.awardList .pageTit h2 {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.62;
+}
+.awardList .pageTit b {
+  font-size: 21px;
+  line-height: 1.62;
+}
+.awardList .partTit {
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.6px;
+}
+.awardList .partTit-en {
+  font-size: 16px;
+  letter-spacing: 0;
+  margin-bottom: 30px;
+}
+.awardList .awardContents {
+  display: flex;
+  gap: 40px;
+}
+.awardList .awardContents .fixedImg img {
+  width: 280px;
+  position: sticky;
+  top: 30px;
+}
+.awardList .awardContents .itemList {
+  flex: 1 0 0;
+}
+.awardList .awardContents .itemList .item {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 20px 0;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  margin-bottom: -1px;
+  width: 100%;
+}
+.awardList .awardContents .itemList .item .top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  min-height: 36px;
+}
+.awardList .awardContents .itemList .item .name {
+  font-size: 28px;
+  color: #212936;
+  line-height: 1;
+}
+.awardList .awardContents .itemList .item .badge {
+  display: inline-flex;
+  align-items: center;
+  color: #099BF5;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0 16px;
+  height: 36px;
+  box-sizing: border-box;
+  border: 1px solid #099BF5;
+  border-radius: 50px;
+}
+.awardList .awardContents .itemList .item em {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.62;
+}
+.awardList .awardContents .itemList .item p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.62;
+}
+
+@media screen and (max-width: 991px) {
+  .awardCon .twoCol .right ul,
+  .awardCon .twoCol .right p {
+    font-size: 14px;
+  }
+  .awardCon .twoCol .right ul li::before {
+    top: 9px;
+  }
+  .awardCon .twoCol .right .download {
+    font-size: 14px;
+  }
+  .awardVisual {
+    height: 495px;
+  }
+  .awardVisual .ci {
+    width: 250px;
+  }
+  .awardCon h3 {
+    font-size: 23px;
+    word-break: keep-all;
+  }
+  .awardList .pageTit h2 {
+    font-size: 32px;
+  }
+  .awardList .pageTit b {
+    font-size: 16px;
+  }
+  .awardList .pageTit {
+    margin-bottom: 56px;
+  }
+  .awardCon .twoCol {
+    flex-direction: column;
+  }
+  .awardCon .twoCol .left {
+    flex: 0 0 0;
+  }
+  .awardList .partTit {
+    font-size: 21px;
+  }
+  .awardList .partTit-en {
+    font-size: 14px;
+  }
+  .awardList .awardContents {
+    gap: 15px;
+  }
+  .awardList .awardContents .fixedImg img {
+    width: 80px;
+  }
+  .awardList .awardContents .itemList .item {
+    padding: 10px 0;
+  }
+  .awardList .awardContents .itemList .item .name {
+    font-size: 18px;
+  }
+  .awardList .awardContents .itemList .item .badge {
+    height: 30px;
+    font-size: 13px;
+    padding: 0 10px;
+  }
+  .awardList .awardContents .itemList .item .top {
+    gap: 10px;
+  }
+  .awardList .awardContents .itemList .item p,
+  .awardList .awardContents .itemList .item em {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=renewStyle.css.map */
