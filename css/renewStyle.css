@@ -198,6 +198,42 @@ footer .nav .nav-item a:hover {
 .mainVisual .updateInfo .update {
   color: var(--primary);
 }
+.mainVisual .twoCol {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.mainVisual .twoCol .awardBanner {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #fff;
+  font-size: 13px;
+}
+.mainVisual .twoCol .awardBanner .imgWrap {
+  position: relative;
+}
+.mainVisual .twoCol .awardBanner .imgWrap img {
+  max-width: 320px;
+  width: 90vw;
+}
+.mainVisual .twoCol .awardBanner .imgWrap .awardYear {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px;
+}
+.mainVisual .twoCol .awardBanner a {
+  display: inline-block;
+  color: #fff;
+}
+.mainVisual .twoCol .awardBanner a.aboutReport {
+  color: #FFEA9D;
+}
 
 .mainCon {
   padding-top: 24px;

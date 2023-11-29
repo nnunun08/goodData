@@ -203,6 +203,47 @@ $innerPadding:15px;
             color: var(--primary);
         }
     }
+
+    .twoCol {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .awardBanner {
+            flex: 1 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            color: #fff;
+            font-size: 13px;
+            .imgWrap {
+                position: relative;
+                img {
+                    max-width: 320px;
+                    width: 90vw;
+                }
+                .awardYear {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding: 8px;
+                }
+            }
+            a {
+                display: inline-block;
+                color: #fff;
+                &.aboutReport {
+                    color: #FFEA9D;
+                }
+            }
+        }
+    }
+    // @media screen and (max-width:768px) {
+    //     .twoCol {
+    //     }
+    // }
 }
 
 .mainCon {
