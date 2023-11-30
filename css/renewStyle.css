@@ -203,6 +203,7 @@ footer .nav .nav-item a:hover {
   align-items: flex-end;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
 }
 .mainVisual .twoCol .awardBanner {
   flex: 1 0 0;
@@ -211,6 +212,20 @@ footer .nav .nav-item a:hover {
   align-items: flex-end;
   color: #fff;
   font-size: 13px;
+}
+@media screen and (max-width: 662px) {
+  .mainVisual .twoCol .awardBanner {
+    align-items: center;
+    gap: 5px;
+  }
+  .mainVisual .twoCol .awardBanner a {
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+  }
+  .mainVisual .twoCol .awardBanner .awardYear {
+    font-size: 16px !important;
+  }
 }
 .mainVisual .twoCol .awardBanner .imgWrap {
   position: relative;

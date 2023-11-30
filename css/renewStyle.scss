@@ -209,6 +209,7 @@ $innerPadding:15px;
         align-items: flex-end;
         justify-content: space-between;
         flex-wrap: wrap;
+        gap: 20px;
         .awardBanner {
             flex: 1 0 0;
             display: flex;
@@ -216,6 +217,18 @@ $innerPadding:15px;
             align-items: flex-end;
             color: #fff;
             font-size: 13px;
+            @media screen and (max-width:662px) {
+                align-items: center;
+                gap: 5px;
+                a {
+                    text-align: center;
+                    font-size: 15px;
+                    padding: 5px;
+                }
+                .awardYear {
+                    font-size: 16px !important;
+                }
+            }
             .imgWrap {
                 position: relative;
                 img {
@@ -240,10 +253,7 @@ $innerPadding:15px;
             }
         }
     }
-    // @media screen and (max-width:768px) {
-    //     .twoCol {
-    //     }
-    // }
+    
 }
 
 .mainCon {
